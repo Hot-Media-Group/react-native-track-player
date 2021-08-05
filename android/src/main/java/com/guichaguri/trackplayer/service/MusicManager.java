@@ -291,6 +291,7 @@ public class MusicManager implements OnAudioFocusChangeListener {
         Bundle bundle = new Bundle();
         bundle.putBoolean("permanent", permanent);
         bundle.putBoolean("paused", paused);
+        bundle.putInt("focus", focus);
         service.emit(MusicEvents.BUTTON_DUCK, bundle);
     }
 
